@@ -4,6 +4,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { ViewoneproductComponent } from './viewoneproduct/viewoneproduct.component';
 import { ViewproductsComponent } from './viewproducts/viewproducts.component';
 
 const routes: Routes = [
@@ -22,7 +23,10 @@ const routes: Routes = [
 },
 { path:"view",
   component:ViewproductsComponent
-}
+},
+{ path:"viewone/:id",
+  component:ViewoneproductComponent
+},
 ];
 
 @NgModule({

@@ -15,4 +15,9 @@ export class ProductService {
     return this.httpclient.get<Array<Product>>(this.URL)
 
   }
+
+  getoneProduct(id?:number):Observable<Product> 
+  {
+    return this.httpclient.get<Product>(this.URL+"/"+id)
+  }
 }

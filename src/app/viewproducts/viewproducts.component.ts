@@ -12,12 +12,11 @@ export class ViewproductsComponent implements OnInit {
   productData:Product[]=[]
   constructor(private product:ProductService) { }
 
-  ngOnInit(): void {
-     this.product.getProducts().subscribe({next:data=>{
-      this.productData=data
-     },
-     error:e=>{alert("Something went Wrong")}
-    })
-  }
-
-}
+   ngOnInit(): void {
+      this.product.getProducts().subscribe({next:data=>{
+       this.productData=data
+      },
+      error:e=>{alert("Something went Wrong")}
+     })
+   }
+ }
