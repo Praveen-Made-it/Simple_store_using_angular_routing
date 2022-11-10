@@ -1,0 +1,20 @@
+{
+  "ProductDetails": [
+    {
+      "id": 1,
+      "name": "Lenovo",
+      "price": "90000"
+    },
+    {
+      "id": 2,
+      "name": "MSI",
+      "price": "100000"
+    },
+    {
+      "id": 3,
+      "name": "dell",
+      "price": "200000"
+    }
+
+  ]
+}
